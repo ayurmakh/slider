@@ -1,0 +1,71 @@
+@import "base"
+@import "vars"
+
+.main_header
+	position: fixed
+	z-index: 200
+
+.slider
+	position: relative
+	width: 100%
+	height: 560px
+	display: flex
+	align-items: flex-end
+
+#slide1
+	position: absolute
+	top: 0	
+	background-image: url('../img/hero-1.jpg')
+	background-size: cover
+	background-position: center
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: opacity .5s ease-out
+
+#slide2
+	position: absolute
+	top: 0
+	background-image: url('../img/hero-2.jpg')
+	background-size: cover
+	background-position: center
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: opacity .5s ease-out
+
+#slide3
+	position: absolute
+	top: 0
+	background-image: url('../img/hero-3.jpg')
+	background-size: cover
+	background-position: center
+	width: 100%
+	height: 100%
+	opacity: 0
+	transition: opacity .5s ease-out
+
+.show
+	opacity: 1 !important
+
+.buttons
+	position: relative
+	z-index: 100
+	margin: 0 auto
+	margin-bottom: 35px
+	display: flex
+
+.slider_button
+	border-radius: 8px
+	width: 11px
+	height: 11px
+	background-color: $spanish_gray
+	margin-right: 10px
+
+	&:hover
+		cursor: pointer
+
+.slider_button_active
+	background-color: $accent
+
+@import "media"

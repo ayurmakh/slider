@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 15px;
+  font-family: 'Open sans', 'Arial', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.main_header {
+  position: fixed;
+  z-index: 200; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  display: flex;
+  align-items: flex-end; }
+
+#slide1 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+
+#slide2 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+
+#slide3 {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/hero-3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+
+.show {
+  opacity: 1 !important; }
+
+.buttons {
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  display: flex; }
+
+.slider_button {
+  border-radius: 8px;
+  width: 11px;
+  height: 11px;
+  background-color: #929799;
+  margin-right: 10px; }
+  .slider_button:hover {
+    cursor: pointer; }
+
+.slider_button_active {
+  background-color: #40babd; }
+
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+  .slider {
+    height: 600px; } }
